@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* LookBook Page */
+.lookbook .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f4eeeb;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.lookbook .sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.lookbook .sidebar a.active {
+  background-color: #66180d;
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: #66180d;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+#navbarNav {
+  width: 25%;
+}
+.lookbook .mL {
+  margin-left: 0.5rem;
+}
+.lookbook .bg-white {
+  background-color: white;
+}
+.lookbook .search {
+  width: 100%;
+}
+.lookbook .btn-maroon {
+  background-color: #66180d;
+  color: white;
+}
+.lookbook .btn-outline-maroon {
+  background-color: white;
+  color: #66180d;
+  border: 2px solid #66180d;
+  cursor: pointer;
+}
+/* .lookbook .border-maroon {
+    border: 1px solid #66180d;
+  } */
+.lookbook .picContent {
+  height: 500px;
+}
+/* .Container2:hover .img-fluid {
+    opacity: 0.3;
+    background-color: #66180d;
+  } */
+.lookbook .top-15 {
+  top: 15% !important;
+}
+.lookbook .start-90 {
+  left: 90% !important;
+}
+.lookbook .text-maroon {
+  color: #66180d;
+}
+
+.MuiAppBar-colorPrimary {
+  color: #6c757d! important;
+  background-color: #ffffff! important;
 }

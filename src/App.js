@@ -1,23 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import CropImage from './components/CropImage'
+import Lookbook from './components/Lookbook';
+import ContentWrapper from './components/ContentWrapper';
+import Grid from './components/Grid';
+import Following from './components/Following';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Following />
     </div>
   );
 }
