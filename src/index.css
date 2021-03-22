@@ -99,3 +99,9 @@ div.content {
   color: #6c757d! important;
   background-color: #ffffff! important;
 }
+.PrivateTabIndicator-colorSecondary-25 {
+  background-color: #66180d! important;
+}
+button:focus:not(:focus-visible){
+  color:#66180d! important;
+}
